@@ -35,7 +35,8 @@ telnet.read_until(" > ")
 telnet.write("wlctl radio " + ACTION + "\n")
 telnet.write("quit \n")
 
+output = telnet.read_all()
 # uncoment for debuggin
-#print telnet.read_all()
+# print output
 
 print "WLAN is %s" % ACTION
