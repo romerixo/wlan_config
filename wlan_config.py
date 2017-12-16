@@ -37,6 +37,6 @@ telnet.write("quit \n")
 
 output = telnet.read_all()
 # uncoment for debuggin
-# print output
+#print output
 
 print "WLAN is %s" % ACTION
